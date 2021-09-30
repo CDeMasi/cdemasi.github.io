@@ -1,0 +1,68 @@
+/*
+  File: style.css
+    GUI Assignment: Creating Your First Webpage
+    Caroline DeMasi
+    Created on September 11, 2021
+    Description: This file serves as the style sheet for the HTML webpage I created for Assignment 1. All of the information that affects the page's style including fonts, text size, 
+    margin spacing, colors, background images, etc is found in this file.  
+*/
+
+/* This section affects the body of the page, basically the entire thing. It sets the background to the yellow green color here. */
+body {
+    background-color: yellowgreen;
+}
+
+
+/* Centers and sizes the header title, fonts, and sets the background image*/
+.header {
+    padding: 60px;
+    background-image: url("../images/pumpkin_banner.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px black;
+    font-size: 30px;
+    font-family: Georgia;
+}
+
+/* Sets font to Georgia for all headings of size 2 and makes font white with a text shadow */
+h2 {
+    font-family: Georgia;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+/*Sets font to Georgia and size to 20px for each instance of a paragraph on the page */
+p {
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+/* Sets the font to Georgia for the table and creates a 1px solid black border around it */
+table, th, td {
+    font-family: Georgia;
+    border: 1px solid black;
+}
+
+/* Sets table width to 50% of page and sets background color of table to goldenrod */
+table {
+    background-color: goldenrod;
+    width: 50%;
+}
+
+/*Sets table height to 70px */
+th {
+    height: 70px;
+} 
+
+/* Sets font to Georgia for each unordered list on the page */
+ul {
+    font-family: Georgia;
+}
+
+/* Scales each image so that it is at the most 25% wide and 300px tall */
+img {
+    max-width: 25%;
+    height: 300px;
+}

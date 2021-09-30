@@ -1,0 +1,121 @@
+/* 
+	File: pacific.css
+    GUI Assignment: Style a Site with External CSS
+    Caroline DeMasi
+    Created on September 26, 2021
+    Description: This file serves as the style sheet for the HTML webpage given to us for HW 2. No changes have been made to the HTML file, all changes have been made in this file.  
+*/
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/*Sets the background image of the header to the sunset.jpg image and justifies it to the right. The background image is set to not repeat and a dark blue color is set at the background 
+color to blend in with the sunset image. */
+header {
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #000033;
+	color: #FFFFFF;
+}
+
+/*Changes color of the side bar to light blue */
+#wrapper {
+	background-color: lightblue;
+}
+
+/*Sets the width and min-width to the parameters specified in the HW 2 document. Also sets the background of the page to the gradient image. */
+body {
+	width: 80%;
+	min-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("ptrbackground.jpg");
+	background-color: #00569f;
+	background-attachment: fixed;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Adds padding to the main section and sets bullet points to the marker.gif image */
+#content {
+	padding-left: 25px;
+	padding-top: 1px;
+	list-style-image: url("marker.gif");
+	list-style-position: inside;
+}
+
+/* Sets padding for the bullet points and content */
+#content img {
+	float: left;
+	padding-right: 30px;
+}
+
+/*Sets color for the resort name and bolds it */
+.resort {
+	font-weight: bold;
+	color: #6591c4;
+}
+
+/*Sets color of hyperlinks to dark blue */
+nav a {
+	color: #000033;
+}
+
+/*Sets style for the list on the left side of the page with the hyperlinks. Removes bullet points for list and sets margins. */
+nav ul {
+	font-size: 1.2em;
+	float: left;
+	margin-left: -1em;
+	font-weight: bold;
+	list-style-type: none;
+}
+nav a:visited {
+	color: #344873;
+}
+
+/*Color becomes white if user hovers over list item */
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/*Removes underline */
+nav a:link {
+	text-decoration: none;
+}
+
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	font-size: 90%;
+}
+
+/*Sets background to white for content and footer and adjusts padding and margins for both */
+#content, footer {
+	background-color: #FFFFFF;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-left: 190px;
+}
+
+/*Sets margin and padding for the email and copyright */
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-size: small;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-left: 190px;
+}

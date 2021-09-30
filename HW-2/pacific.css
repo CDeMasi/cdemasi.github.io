@@ -71,11 +71,12 @@ nav ul {
 	font-weight: bold;
 	list-style-type: none;
 }
+
+/*Sets color of hyperlinks to a different blue once the link has been visited */
 nav a:visited {
 	color: #344873;
 }
 
-/*Color becomes white if user hovers over list item */
 nav a:hover {
 	color: #FFFFFF;
 }

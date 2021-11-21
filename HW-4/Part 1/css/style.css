@@ -1,0 +1,70 @@
+/*
+File: style.css
+GUI Assignment: Using the jQuery Plugin/UI with Your Dynamic Table
+Caroline DeMasi, UMass Lowell Computer Science, Caroline_DeMasi@student.uml.edu
+Copyright (c) 2021 by Caroline DeMasi. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Description: Handles all the styling of this assignment. Any colors, fonts, text alignment, etc is in this file.
+*/
+
+body {
+    background-color: white;
+}
+
+/*Aligns the header*/
+h1 {
+    text-align: center;
+}
+
+/*Sets the table height and makes it scrollable*/
+#myMatrix {
+    height:350px;
+    overflow:auto;
+}
+
+/*Sets background color and border for table*/
+.newTable th, .newTable td, .newTable table{
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+/*Makes every other column slate grey*/
+td:nth-child(odd) {
+    background: lightslategrey;
+}
+
+/*Makes the top header stay with scroll*/
+th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/*Sets padding for table cells and aligns text in the center*/
+.newTable th, .newTable td {
+    padding: 3px;
+    text-align: center;
+}
+
+/*Changes first row color to plum*/
+th.firstRow {
+    background-color: plum;
+}
+
+/*Changes first column color to plum and makes it stay with scroll*/
+td.firstCol {
+    background-color: plum;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}
+
+/*Changes first cell color to blue violet*/
+th.firstCell {
+    background-color: blueviolet;
+}
+
+/*Makes error message red*/
+.error {
+    color: red;
+}

@@ -35,7 +35,7 @@ var ScrabbleTiles =
         {"letter":"X",  "value" : 8,  "amount" : 1,  "image":"graphics_data/Scrabble_Tiles/x.jpg"  },
         {"letter":"Y",  "value" : 4,  "amount" : 2,  "image":"graphics_data/Scrabble_Tiles/y.jpg"  },
         {"letter":"Z",  "value" : 10, "amount" : 1,  "image":"graphics_data/Scrabble_Tiles/z.jpg"  },
-        {"letter":"_",  "value" : 0,  "amount" : 2,  "image":"graphics_data/Scrabble_Tiles/_.jpg" }
+        {"letter":"_",  "value" : 0,  "amount" : 2,  "image":"graphics_data/Scrabble_Tiles/free.jpg" }
     ]
 
 //The is the data structure that holds the board images and the special slot types

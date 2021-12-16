@@ -1,3 +1,13 @@
+/*
+    File: script.js
+    GUI Assignment 5: Implementing a Bit of Scrabble with Drag-and-Drop
+    Caroline DeMasi, UMass Lowell Computer Science, Caroline_DeMasi@student.uml.edu
+    Copyright (c) 2021 by Caroline DeMasi. All rights reserved. May be freely copied or
+    excerpted for educational purposes with credit to the author.
+    Created by Caroline DeMasi on December 14th, 2021
+    The data structures and some algorithms were shared with me via Jenna Parrillo. 
+*/
+
 //Variable initialization, including scores, Letters, Rack, dictionary, and distribution arrays
 var bestScore = 0 
 var currscore = 0
@@ -6,7 +16,7 @@ var Rack = []
 let dict = []
 let distribution = []
 
-//This is the data structure that holds each letter tiles's value, amount, and image
+//This is the data structure that holds each letter tiles's value, amount in game, and image
 var ScrabbleTiles = 
     [
         {"letter":"A", "value" : 1,  "amount" : 9,  "image":"graphics_data/Scrabble_Tiles/a.jpg"},
@@ -52,7 +62,7 @@ var ScrabbleBoard =
 
 $(document).ready(function()
 {   
-    //Parses the dictionary 
+    //Dictionary gets parsed here
     $.ajax({
         url: "https://cdemasi.github.io/HW-5/words.txt",
         success: function(result) {
@@ -172,6 +182,7 @@ function removeLetter(event,ui)
             }
         }
     }
+
     //Tile is snapped back to the rack
     ui.draggable.css({"position": "relative", "top": "", "left": ""})
     update()
@@ -220,12 +231,13 @@ function score()
         }
     }
 
+    //Removes unnecessary whitespace using trim()
     word = word.trim()
     let i = 0
 
     //Handles case if a blank tile is detected
     if (blank) {
-        //Generates all possible words with the blank
+        //Generates all possible words with the blank tile
         var words = []
         for (j = 0; j < 27; ++j) {
             words[j] = word.replace("_", ScrabbleTiles[j].letter)
@@ -262,7 +274,7 @@ function score()
     //Error message for if it is not a valid word
     if (i == dict.length) {
         document.getElementById('rack').insertAdjacentHTML('afterend', 
-        '<div class="alert alert-danger" role="alert">ERROR: Not a valid word!</div>');
+        '<div class="alert alert-danger" role="alert">ERROR: This is not a valid word!</div>');
 
     //Else if it is valid, generate the user's current score
     } else {

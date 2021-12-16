@@ -1,3 +1,13 @@
+/*
+    File: style.css
+    GUI Assignment 5: Implementing a Bit of Scrabble with Drag-and-Drop
+    Caroline DeMasi, UMass Lowell Computer Science, Caroline_DeMasi@student.uml.edu
+    Copyright (c) 2021 by Caroline DeMasi. All rights reserved. May be freely copied or
+    excerpted for educational purposes with credit to the author.
+    Created by Caroline DeMasi on December 14th, 2021
+*/
+
+/* Background colors and text style for body */
 body
 {
     color:#973ea3;
@@ -34,12 +44,14 @@ h1
     margin: 0 auto;
 }
 
+/* Sets board size */
 #board
 {
     max-width: 539px;
     margin: 0 auto;
 }
 
+/* Creates the virtual rack using a tile holder png image given to us for the assignment.*/
 #rack
 {
     background-image: url("../graphics_data/tile-holder.png");
@@ -49,6 +61,7 @@ h1
     background-repeat: no-repeat;
 }
 
+/* Sets size for each letter tile */
 .letterTile
 {
     max-width: 70px;

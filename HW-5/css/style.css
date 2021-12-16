@@ -1,0 +1,57 @@
+body
+{
+    color:#973ea3;
+    font-family:'Courier New', Courier, monospace;
+    background-color: powderblue;
+}
+
+.bg 
+{
+    background: #973ea3;
+}
+
+h1 
+{
+    color: white;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.DisplayResults
+{
+    text-align: center;
+}
+
+.bestScore
+{
+    display: inline;
+    margin: 0 auto;
+}
+
+.score
+{
+    display: inline;
+    margin: 0 auto;
+}
+
+#board
+{
+    max-width: 539px;
+    margin: 0 auto;
+}
+
+#rack
+{
+    background-image: url("../graphics_data/tile-holder.png");
+    max-width: 570px;
+    height: 100px;
+    margin: 2rem auto;
+    background-repeat: no-repeat;
+}
+
+.letterTile
+{
+    max-width: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
